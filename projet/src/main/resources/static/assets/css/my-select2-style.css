@@ -1,0 +1,19 @@
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+     background-color:#00acc1;
+     color:#fff;
+     border-radius:4px;
+     margin-right:8px;
+     padding: 4px 8px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+     color:#fff;
+}
+.select2-container--classic .select2-results__option--highlighted[aria-selected]{
+     background-color:#00acc1;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected]{
+     background-color:#00acc1;
+}
+.list-options{
+     color:#00acc1;
+}

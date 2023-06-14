@@ -1,0 +1,21 @@
+importer: psql -U postgres -d mikolo -f fichier.sql
+exporter: pg_dump mikolo > file
+
+\c postgres;
+drop database mikolo;
+create database mikolo;
+\c mikolo;
+
+
+CREATE SEQUENCE _id_seq START WITH 1;
+ALTER SEQUENCE _id_seq RESTART WITH 1;
+
+id integer DEFAULT nextval('_id_seq'::regclass) NOT NULL  ,
+
+
+sprford --table --name --crud
+
+sprcrud --table --name
+
+je voudrais des données format sql (id, reference(model d'ordinateur), description, brand_id, processor_id, screen_id, size_screen, ram_size, rom_size, rom_type_id)
+de 30 ordinateurs avec brand_id entre 1 et 5, processor_id entre 1 et 10, screen_id entre 1 et 3, size_screen entre 13 et 18, ram_size entre 4 et 32, rom_size entre 128 et 1024, rom_type_id entre 1 et 2

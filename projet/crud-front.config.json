@@ -1,0 +1,54 @@
+{
+  "baseFolder": "./",
+  "jspFolder": "src/main/webapp/WEB-INF/jsp/sale",
+  "url": "jdbc:postgresql://localhost:5432/mikolo",
+  "username": "postgres",
+  "password": "mendrika",
+  "driverClass": "org.postgresql.Driver",
+  "headPath": "D:/ITU/ITU 6/evaluation stage/static-head-footer/header.jsp",
+  "footPath": "D:/ITU/ITU 6/evaluation stage/static-head-footer/footer.jsp",
+  "registry": {
+    "users": {
+      "create": "user-create.jsp",
+      "update": null,
+      "readListe": "user-readAll.jsp",
+      "readFiche": null,
+      "url": null
+    },
+    "store": {
+      "create": "store-create-read.jsp",
+      "update": "stock-update.jsp",
+      "readListe": "store-read.jsp",
+      "readFiche": null,
+      "url": null
+    },
+    "laptop": {
+      "create": "laptop-create.jsp",
+      "update": "laptop-update.jsp",
+      "readListe": null,
+      "readFiche": null,
+      "url": null
+    },
+    "central_stock": {
+      "create": "stock-create.jsp",
+      "update": null,
+      "readListe": null,
+      "readFiche": null,
+      "url": null
+    },
+    "v_stock": {
+      "create": null,
+      "update": null,
+      "readListe": "stock-readall.jsp",
+      "readFiche": null,
+      "url": null
+    },
+    "sale": {
+      "create": null,
+      "update": null,
+      "readListe": "sale-readall.jsp",
+      "readFiche": null,
+      "url": null
+    }
+  }
+}

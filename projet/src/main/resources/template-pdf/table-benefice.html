@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+     .table-bordered {
+          border: 1px solid #e3eaef;
+     }
+
+     .table-bordered th,
+     .table-bordered td {
+          border: 1px solid #e3eaef;
+     }
+
+     .table-bordered thead th,
+     .table-bordered thead td {
+          border-bottom-width: 2px;
+     }
+
+     .card-title {
+          margin-bottom: 1.25rem;
+     }
+</style>
+
+<head>
+     <meta charset="UTF-8">
+     <title>Vente</title>
+</head>
+
+<body>
+     <h1 class="card-title">SOCIETE MIKOLO</span></h1>
+     <h2 class="card-title">Benefice de l'anne <span th:text="${year}"></span></h2>
+     <table class="table-bordered" >
+          <thead>
+               <tr>
+                    <th>Mois</th>
+                    <th>benefice</th>
+               </tr>
+          </thead>
+          <tbody>
+               <tr th:each="t : ${stat}">
+                    <td th:text="${t.year+'/'+t.month}"></td>
+                    <td th:text="${t.total}"></td>
+               </tr>
+          </tbody>
+     </table>
+
+
+
+</body>
+
+</html>

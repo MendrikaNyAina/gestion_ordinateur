@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<taglib version="2.0"
+     xmlns="http://java.sun.com/xml/j2ee"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+
+     <tlib-version>1.0</tlib-version>
+     <jsp-version>2.3</jsp-version>
+     <short-name>HtmlTag</short-name>
+     <display-name>Simple Html Tag</display-name>
+     <uri>http://www.front.org/page.tags</uri>
+
+     <!--head-->
+     <tag>
+          <name>Head</name>
+          <tagclass>front.Head</tagclass>
+          <bodycontent>JSP</bodycontent>
+
+          <attribute>
+               <name>title</name>
+               <required>false</required>
+               <rtexprvalue>true</rtexprvalue>
+          </attribute>
+          <attribute>
+               <name>isChart</name>
+               <required>false</required>
+               <rtexprvalue>true</rtexprvalue>
+          </attribute>
+          <attribute>
+               <name>isSelect2</name>
+               <required>false</required>
+               <rtexprvalue>true</rtexprvalue>
+          </attribute>
+          <attribute>
+               <name>isDynamicForm</name>
+               <required>false</required>
+               <rtexprvalue>true</rtexprvalue>
+          </attribute>
+          <attribute>
+               <name>isJquery</name>
+               <required>false</required>
+               <rtexprvalue>true</rtexprvalue>
+          </attribute>
+          <attribute>
+               <name>isSweetAlert</name>
+               <required>false</required>
+               <rtexprvalue>true</rtexprvalue>
+          </attribute>
+     </tag>
+     
+</taglib>

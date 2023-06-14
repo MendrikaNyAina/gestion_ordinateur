@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+     .table-bordered {
+          border: 1px solid #e3eaef;
+     }
+
+     .table-bordered th,
+     .table-bordered td {
+          border: 1px solid #e3eaef;
+     }
+
+     .table-bordered thead th,
+     .table-bordered thead td {
+          border-bottom-width: 2px;
+     }
+
+     .card-title {
+          margin-bottom: 1.25rem;
+     }
+</style>
+
+<head>
+     <meta charset="UTF-8">
+     <title>Title</title>
+</head>
+
+<body>
+     <h1 class="card-title">Test table</h1>
+     <table class="card-body">
+          <thead>
+               <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+               </tr>
+          </thead>
+          <tbody>
+               <tr th:each="book : ${books}">
+                    <td th:text="${book.title}"></td>
+                    <td th:text="${book.author}"></td>
+               </tr>
+          </tbody>
+     </table>
+
+
+
+</body>
+
+</html>

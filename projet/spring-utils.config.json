@@ -1,0 +1,174 @@
+{
+  "baseFolder": "./",
+  "url": "jdbc:postgresql://localhost:5432/mikolo",
+  "username": "postgres",
+  "password": "mendrika",
+  "driverClass": "org.postgresql.Driver",
+  "basePackage": "app.code",
+  "controllerPackage": "controller",
+  "modelPackage": "model.settings",
+  "servicePackage": "service.settings",
+  "repositoryPackage": "repos.settings",
+  "registry": {
+    "store": {
+      "model": "app.code.model.user.Store",
+      "repo": "app.code.repos.user.StoreRepo",
+      "service": "app.code.service.user.StoreService",
+      "controller": null,
+      "controllerjsp": "app.code.controller.StoreController",
+      "url": "store"
+    },
+    "role": {
+      "model": "app.code.model.user.Role",
+      "repo": null,
+      "service": null,
+      "controller": null,
+      "controllerjsp": null,
+      "url": null
+    },
+    "users": {
+      "model": "app.code.model.user.Users",
+      "repo": "app.code.repos.user.UsersRepo",
+      "service": "app.code.service.user.UsersService",
+      "controller": null,
+      "controllerjsp": "app.code.controller.UsersController",
+      "url": "user"
+    },
+    "screen_type": {
+      "model": "app.code.model.laptop.ScreenType",
+      "repo": "app.code.repos.laptop.ScreenTypeRepo",
+      "service": "app.code.service.laptop.ScreenTypeService",
+      "controller": null,
+      "controllerjsp": null,
+      "url": null
+    },
+    "processor": {
+      "model": "app.code.model.laptop.Processor",
+      "repo": "app.code.repos.laptop.ProcessorRepo",
+      "service": "app.code.service.laptop.ProcessorService",
+      "controller": null,
+      "controllerjsp": null,
+      "url": null
+    },
+    "rom_type": {
+      "model": "app.code.model.laptop.RomType",
+      "repo": "app.code.repos.laptop.RomTypeRepo",
+      "service": "app.code.service.laptop.RomTypeService",
+      "controller": null,
+      "controllerjsp": null,
+      "url": null
+    },
+    "brand": {
+      "model": "app.code.model.sale.Brand",
+      "repo": "app.code.repos.sale.BrandRepo",
+      "service": "app.code.service.sale.BrandService",
+      "controller": null,
+      "controllerjsp": "app.code.controller.BrandController",
+      "url": "brand"
+    },
+    "laptop": {
+      "model": "app.code.model.laptop.Laptop",
+      "repo": "app.code.repos.laptop.LaptopRepo",
+      "service": "app.code.service.laptop.LaptopService",
+      "controller": null,
+      "controllerjsp": "app.code.controller.LaptopController",
+      "url": "laptop"
+    },
+    "central_stock": {
+      "model": "app.code.model.stock.CentralStock",
+      "repo": "app.code.repos.stock.CentralStockRepo",
+      "service": "app.code.service.stock.CentralStockService",
+      "controller": null,
+      "controllerjsp": "app.code.controller.CentralStockController",
+      "url": "stock"
+    },
+    "v_stock_current": {
+      "model": "app.code.model.stock.Stock",
+      "repo": "app.code.repos.stock.StockRepo",
+      "service": "app.code.service.stock.StockService",
+      "controller": null,
+      "controllerjsp": "app.code.controller.StockController",
+      "url": "stock"
+    },
+    "status_transfert": {
+      "model": "app.code.model.stock.StatusTransfert",
+      "repo": "app.code.repos.stock.StatusTransfertRepo",
+      "service": "app.code.service.stock.StatusTransfertService",
+      "controller": null,
+      "controllerjsp": null,
+      "url": null
+    },
+    "transfert": {
+      "model": "app.code.model.stock.Transfert",
+      "repo": "app.code.repos.stock.TransfertRepo",
+      "service": "app.code.service.stock.TransfertService",
+      "controller": null,
+      "controllerjsp": "app.code.controller.TransfertController",
+      "url": "transferts"
+    },
+    "receipt": {
+      "model": "app.code.model.stock.Receipt",
+      "repo": "app.code.repos.stock.ReceiptRepo",
+      "service": "app.code.service.stock.ReceiptService",
+      "controller": null,
+      "controllerjsp": "app.code.controller.ReceiptController",
+      "url": "store/{fkId}/receipt"
+    },
+    "v_transfert_restant": {
+      "model": "app.code.model.stock.VTransfertRestant",
+      "repo": "app.code.repos.stock.VTransfertRestantRepo",
+      "service": null,
+      "controller": null,
+      "controllerjsp": null,
+      "url": null
+    },
+    "sale": {
+      "model": "app.code.model.sale.Sale",
+      "repo": "app.code.repos.sale.SaleRepo",
+      "service": "app.code.service.sale.SaleService",
+      "controller": null,
+      "controllerjsp": "app.code.controller.SaleController",
+      "url": "sale"
+    },
+    "sale_details": {
+      "model": "app.code.model.sale.SaleDetails",
+      "repo": "app.code.repos.sale.SaleDetailsRepo",
+      "service": "app.code.service.sale.SaleDetailsService",
+      "controller": null,
+      "controllerjsp": null,
+      "url": null
+    },
+    "v_stock_magasin": {
+      "model": "app.code.model.stock.ModelStock",
+      "repo": "app.code.repos.stock.ModelStockRepo",
+      "service": "app.code.service.stock.ModelStockService",
+      "controller": null,
+      "controllerjsp": null,
+      "url": null
+    },
+    "v_sale": {
+      "model": "app.code.model.sale.VSale",
+      "repo": "app.code.repos.sale.VSaleRepo",
+      "service": "app.code.service.sale.VSaleService",
+      "controller": null,
+      "controllerjsp": null,
+      "url": null
+    },
+    "v_stat_vente_mois_magasin": {
+      "model": "app.code.model.stat.VStatVente",
+      "repo": "app.code.repos.stat.VStatVenteRepo",
+      "service": "app.code.service.stat.VStatVenteService",
+      "controller": null,
+      "controllerjsp": "app.code.controller.VStatVenteController",
+      "url": "stat"
+    },
+    "commission": {
+      "model": "app.code.model.settings.commission",
+      "repo": "app.code.repos.settings.commissionRepo",
+      "service": "app.code.service.settings.commissionService",
+      "controller": null,
+      "controllerjsp": "app.code.controller.commissionController",
+      "url": "admin/commission"
+    }
+  }
+}
